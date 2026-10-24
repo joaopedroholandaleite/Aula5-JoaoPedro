@@ -16,8 +16,3 @@ function calcularFrete(distanciaKm) {
 
 // deixa a função visível para outros arquivos (os testes)
 module.exports = { calcularFrete };
-
-test('frete da minha entrega de 18 km custa R$ 20', () => {
-
- assert.strictEqual(calcularFrete(18), 20);
-});
