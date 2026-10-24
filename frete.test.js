@@ -28,3 +28,10 @@ test('frete da minha entrega de 18 km custa R$ 20', () => {
  assert.strictEqual(calcularFrete(18), 20);
 });
 
+const test = require('node:test');
+const { calcularFrete } = require('./frete');
+test('só executa, não confere nada', () => {
+ calcularFrete(3);
+ calcularFrete(10);
+ try { calcularFrete(-1); } catch (e) {}
+});
